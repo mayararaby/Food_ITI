@@ -86,3 +86,7 @@ p {
 .font-size {
     font-size: 1.3em;
 }
+
+.cursor {
+    cursor: pointer;
+}
