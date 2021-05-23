@@ -64,10 +64,12 @@ a:hover {
     color: $blackColor !important;
 }
 
-.page-item.active .page-link {
-    color: $whiteColor !important;
-    background-color: $blackColor;
-    border-color: $blackColor;
+.page-item.active {
+    .page-link {
+        color: $whiteColor !important;
+        background-color: $blackColor;
+        border-color: $blackColor;
+    }
 }
 
 .bg-light {
