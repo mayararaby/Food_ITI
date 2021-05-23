@@ -1,0 +1,100 @@
+$cursor: pointer;
+$blackColor: black;
+$fullWidth: 100%;
+$fullHeight:100%;
+$object-fit-center: cover;
+$grayColor: gray;
+$whiteColor: #fff;
+$border: none;
+$object-fit-contain: contain;
+$font-wight:bold;
+@mixin font ($font-size) {
+    font-size: $font-size;
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url(../RobotoCondensed-Light.ttf);
+}
+
+body {
+    font-family: 'myFont';
+}
+
+a {
+    color: $blackColor;
+}
+
+a:hover {
+    color: $grayColor;
+}
+
+.imgCard {
+    object-fit: $object-fit-center;
+    width: $fullWidth;
+    height: $fullHeight;
+    object-position: center;
+    cursor: pointer;
+    transition: width 500ms;
+}
+
+.imgCard:hover {
+    width: 106%;
+}
+
+.card {
+    border: $border;
+}
+
+.manImg {
+    max-height: 60vh;
+    object-fit: $object-fit-contain;
+}
+
+.containerImg {
+    height: 300px;
+    overflow: hidden;
+}
+
+.page-link:hover {
+    color: $grayColor !important;
+}
+
+.page-link {
+    color: $blackColor !important;
+}
+
+.page-item.active .page-link {
+    color: $whiteColor !important;
+    background-color: $blackColor;
+    border-color: $blackColor;
+}
+
+.bg-light {
+    background-color: $whiteColor !important;
+}
+
+.postImg {
+    max-height: 12vh;
+    object-fit: $object-fit-contain;
+}
+
+.navLink {
+    color: $blackColor;
+    transition: margin 500ms;
+    font-size: 1.2em;
+    font-weight: $font-wight;
+}
+
+.navLink:hover {
+    color: $grayColor;
+    margin-left: 10px;
+}
+
+p {
+    @include font(1.1em);
+}
+
+.font-size {
+    @include font(1.3em);
+}

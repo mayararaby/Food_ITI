@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../RobotoCondensed-Light.ttf);
+}
+
+body {
+  font-family: 'myFont';
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+.imgCard {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  cursor: pointer;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+}
+
+.imgCard:hover {
+  width: 106%;
+}
+
+.card {
+  border: none;
+}
+
+.manImg {
+  max-height: 60vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.containerImg {
+  height: 300px;
+  overflow: hidden;
+}
+
+.page-link:hover {
+  color: gray !important;
+}
+
+.page-link {
+  color: black !important;
+}
+
+.page-item.active .page-link {
+  color: #fff !important;
+  background-color: black;
+  border-color: black;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.postImg {
+  max-height: 12vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navLink {
+  color: black;
+  -webkit-transition: margin 500ms;
+  transition: margin 500ms;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  color: gray;
+  margin-left: 10px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.font-size {
+  font-size: 1.3em;
+}
+/*# sourceMappingURL=style.css.map */
